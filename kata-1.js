@@ -10,12 +10,11 @@ const sumLargestNumbers = function(data) {
   }
   for (let j = 0; j < data.length; j++) { //loop to target 2nd largest number
     if ((data[j]) < largestNumbers[0] && (data[j] > max2)) {
-       //stores max value in max2 as long as smaller than largestNumber[0] (< 10, 3, 92)
-      max2 = data[j];
+      max2 = data[j]; //stores max value in max2 as long as smaller than largestNumber[0] (< 10, 3, 92)
       largestNumbers[1] = max2;
     }
   }
-  return largestNumbers[0] + largestNumbers[1];
+  return largestNumbers[0] + largestNumbers[1]; //sums index 0 and 1 of newly created max1 & max2 arrays
 };
 
 console.log(sumLargestNumbers([1, 10]));
